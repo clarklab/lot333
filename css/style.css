@@ -1,0 +1,88 @@
+body{
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size:.6rem;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+}
+
+a{
+	color:var(--black);
+	text-decoration: none;
+}
+
+a.h2:hover, a:hover h2{
+	text-decoration: underline;
+}
+
+h1{
+
+}
+
+.h2, h2{
+	font-size: .8rem;
+	font-weight: bold;
+}
+
+.logo{
+	width:50px;
+	height:auto;
+}
+
+.header nav{
+	display: none;
+}
+
+.header nav a{
+	margin-left:3rem;
+}
+
+footer nav a{
+	display: block;
+	font-weight: bold;
+	font-size:.8rem;
+}
+
+footer .social a{
+	display: block;
+	text-align: right;
+}
+
+.subscribe{
+	width:100%;
+	max-width:250px;
+}
+.subscribe input{
+	font-family: Helvetica, Arial, Sans-serif;
+	width:100%;
+	border:1px solid var(--black);
+	padding:.5rem;
+	box-sizing: border-box;
+	margin-bottom:.5rem;
+}
+.subscribe label{
+	padding:.5rem 0;
+	display: inline-block;
+}
+.subscribe button{
+	float:right;
+	background:var(--black);
+	color:var(--white);
+	border:none;
+	padding:.5rem;
+}
+
+@media screen and (min-width:40em){
+	.logo{
+	width:100px;
+	}
+	.header nav{
+		display: block;
+	}
+
+	footer{
+		margin-top:14rem;
+	}
+}
