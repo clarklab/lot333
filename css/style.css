@@ -48,7 +48,6 @@ footer nav a{
 
 footer .social a{
 	display: block;
-	text-align: right;
 	margin-bottom:.2rem;
 }
 
@@ -117,17 +116,6 @@ p.small{
 .split-right .first { flex: 1.11; }
 .split-right .second { flex: .71; }
 
-.split-left .sm-col .image {
-  flex: 1;
-  overflow: hidden;
-  /* img will be cut off */
-}
-
-.split-left .fit{
-	 min-height: 100%;/* again , tallest should set the rythm */
-  min-width: 100%; /* unless one doesn't fit the width */
-  display: block;
-}
 
 @media screen and (min-width:52em){
 	.logo{
@@ -139,5 +127,9 @@ p.small{
 
 	footer{
 		margin-top:14rem;
+	}
+
+	footer .social a{
+	text-align: right;
 	}
 }
