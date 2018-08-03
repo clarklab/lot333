@@ -43,11 +43,13 @@ footer nav a{
 	display: block;
 	font-weight: bold;
 	font-size:.8rem;
+	margin-bottom:.2rem;
 }
 
 footer .social a{
 	display: block;
 	text-align: right;
+	margin-bottom:.2rem;
 }
 
 .subscribe{
@@ -74,7 +76,60 @@ footer .social a{
 	padding:.5rem;
 }
 
-@media screen and (min-width:40em){
+.post h1, .post p, .post .full.narrow{
+	max-width: 500px;
+	margin:0 auto 2rem auto;
+}
+
+.post h1{
+	margin:0 auto;
+}
+
+.post p{
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+p.small{
+	font-size:.6rem;
+}
+
+.image{
+	background-size:cover;
+	background-position: 50% 50%;
+}
+
+.post .module p{
+	margin-left:0;
+	margin-right:0;
+	font-size:.8rem;
+}
+
+.split-left img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.split-left .first { flex: .71; }
+.split-left .second { flex: 1.11; }
+
+.split-right .first { flex: 1.11; }
+.split-right .second { flex: .71; }
+
+.split-left .sm-col .image {
+  flex: 1;
+  overflow: hidden;
+  /* img will be cut off */
+}
+
+.split-left .fit{
+	 min-height: 100%;/* again , tallest should set the rythm */
+  min-width: 100%; /* unless one doesn't fit the width */
+  display: block;
+}
+
+@media screen and (min-width:52em){
 	.logo{
 	width:100px;
 	}
