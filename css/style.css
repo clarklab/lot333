@@ -1,6 +1,7 @@
 body{
 	font-family: Helvetica, Arial, Sans-serif;
 	font-size:.6rem;
+
 }
 
 :root {
@@ -13,7 +14,7 @@ a{
 	text-decoration: none;
 }
 
-a.h2:hover, a:hover h2{
+a.h2:hover, a:hover h2, .brands a:hover{
 	text-decoration: underline;
 }
 
@@ -22,8 +23,25 @@ h1{
 }
 
 .h2, h2{
-	font-size: .8rem;
+	font-size: .9rem;
 	font-weight: bold;
+	margin:.85rem 0;
+}
+
+.h3, h3{
+	font-size: .7em;
+	line-height: 18px;
+}
+
+.brands h2{
+	font-size:1.2rem;
+}
+.brands {
+	font-size: .7rem;
+}
+
+.spaced{
+	line-height: 1.15rem;
 }
 
 .logo{
@@ -39,10 +57,24 @@ h1{
 	margin-left:3rem;
 }
 
+.max-width-4{
+	max-width:74rem;
+}
+
+.px333{
+	padding-left:.75rem;
+	padding-right:.75rem;
+}
+
+.mxn333{
+	margin-left:-.75rem;
+	margin-right:-.75rem;
+}
+
 footer nav a{
 	display: block;
 	font-weight: bold;
-	font-size:.8rem;
+	font-size:.9rem;
 	margin-bottom:.2rem;
 }
 
@@ -75,8 +107,8 @@ footer .social a{
 	padding:.5rem;
 }
 
-.post h1, .post p, .post .full.narrow{
-	max-width: 500px;
+.post h1, .post p{
+	max-width: 44rem;
 	margin:0 auto 2rem auto;
 }
 
@@ -87,6 +119,11 @@ footer .social a{
 .post p{
 	font-size: 1rem;
 	line-height: 1.5;
+}
+
+.post .full.narrow{
+	max-width: 44rem;
+	margin:0 auto 0 auto;
 }
 
 p.small{
@@ -101,7 +138,11 @@ p.small{
 .post .module p{
 	margin-left:0;
 	margin-right:0;
-	font-size:.8rem;
+	margin-top:1rem;
+	font-size:.9rem;
+}
+.post .module a{
+	text-decoration: underline;
 }
 
 .split-left img {
@@ -123,6 +164,10 @@ p.small{
 	}
 	.header nav{
 		display: block;
+	}
+
+	.post h1, .post p, .post .full.narrow{
+		padding-right:10rem;
 	}
 
 	footer{
