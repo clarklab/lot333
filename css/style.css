@@ -1,6 +1,8 @@
 body{
 	font-family: Helvetica, Arial, Sans-serif;
 	font-size:.6rem;
+	padding:0;
+	margin:0;
 
 }
 
@@ -61,6 +63,10 @@ h1{
 	height:auto;
 }
 
+.header{
+	margin-top:.5rem;
+}
+
 .header nav{
 	display: none;
 }
@@ -98,7 +104,7 @@ footer .social a{
 .subscribe{
 	width:100%;
 	max-width:250px;
-	margin:0 0 0 auto;
+	margin:0 0 2rem 0;
 }
 .subscribe input{
 	font-family: Helvetica, Arial, Sans-serif;
@@ -180,6 +186,9 @@ p.small{
 	.logo{
 	width:100px;
 	}
+	.header{
+		margin-top:2rem;
+	}	
 	.header nav{
 		display: block;
 	}
@@ -194,5 +203,36 @@ p.small{
 
 	footer .social a{
 	text-align: right;
+	}
+
+	.subscribe{
+		margin:0 0 0 auto;
+	}
+}
+
+@media screen and (max-width:52rem){
+	.header .feed-intro{
+		padding-left:0;
+		padding-right:0;
+		padding-top:3rem;
+		width:100%;
+	}
+	.header.mb4{
+		margin-bottom:2rem;
+	}
+	.header.product.mb4{
+		margin-bottom:1rem;
+	}
+	h2, .h2{
+		margin-top:.6rem;
+		margin-bottom:.5rem;
+	}
+	.post .module p{
+		margin-top:.6rem;
+	}
+
+	.feed .item .mb3{
+		margin-top:.5rem;
+		margin-bottom:.75rem;
 	}
 }
